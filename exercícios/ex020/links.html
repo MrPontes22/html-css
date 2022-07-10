@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+        <style>
+        /* SELETORES PERSONALIZADOS
+        #  = id
+        .  = Class
+        :  = pseudo-class
+        :: = pseudo-elements
+        >  = children        
+        */        
+        body{ 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        ul{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial::after{       
+            content: ' (link)';  
+            text-decoration: none;  
+            color: black;
+        }
+        .especial::before{
+            content: '';
+            color: black;
+        }
+      
+            </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>   
+    <ul>          
+        <li><a href="https://www.youtube.com/channel/UCPaQi98baAWrb8CrRkQGqjw" class="especial" target="_blank" rel="external">YouTube</a></li>
+        <li><a href="https://github.com/MrPontes22"  target="_blank" rel="external">GitHub</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100001323993715" target="_blank" rel="external">Facebook</a></li>
+    </ul>
+</body>
+</html>

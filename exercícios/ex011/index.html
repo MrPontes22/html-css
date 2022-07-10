@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua a tela do seu navegado.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+          <!--A Tag picture e source são usadas para ajustar uma imagem em diferentes telas de dispositivos -->
+        <h1>Reproduzindo áudios</h1>
+        <p>Vamos aprender a reproduzir áudio em HTML5</p>
+        <audio preload="metadata" autoplay controls>            
+            <source src="midia/ragbonemanhuman.mp4" type="audio/mp3">
+            <source src="audios/audio.ogg" type="audio/ogg">
+            <source src="audios/audio.wav" type="audio/wav">
+            <source src="audios/audio.m4a" type="audio/m4a">
+            <source src="audios/audio.mp3" type="audio/mp3">
+            <source src="audios/audio.wma" type="audio/wma">
+            <p>Infelizmente seu navegador não consegue reproduzir áudio</p>
+            <p><a href="midia/ragbonemanhuman.mp4">Clique aqui para baixar o arquivo em mp3</a></p>
+        </audio>
+        
+</body>
+</html>

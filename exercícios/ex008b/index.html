@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document-getElementById('teste') </code>é escrito em linguagem javaScript.</p>
+    <pre><!--A tag PRE serve para pré-formatações, exibe o texto como é no arquivo index.html.-->
+        <code><!--A tag CODE serve para formatações de código, texto com cara de código-fonte.-->
+            document.getElementById('teste')
+    nun = int(input('Digite um número: '))  
+    print('O número digitado foi: ', nun)
+    if nun % 2 == 0:
+        print('O número digitado é par')
+    else:
+        print('O número digitado é ímpar')
+        print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p> 
+    <!---A Tag Q é usada em citações para incluir as aspas. -->
+    <h2>Citações com autor</h2>
+    <p>Segundo Maurício Samy Silva, em seu livro HTML5 – 2ª Edição:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML5_2%C2%AA_Edi%C3%A7%C3%A3o/f7JVBQAAQBAJ?hl=pt-BR&gbpv=0" >
+        <p>HTML5 é a linguagem de marcação que amplia de forma surpreendente as funcionalidades da HTML, alterando de maneira significativa como você desenvolve para a web.</p>
+        <p>Maurício Samy Silva</p>
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> <!--A tag ABBR serve para abreviações, exige a descrição(significado) entre as aspas do TITLE que aparecerá ao passar o cursor do mouse sobre a abreviação-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a fazer coisas no HTML5.</bdo>  </p>
+    <!---A tag BDO serve para textos invertidos, o atributo DIR define se o texto será lido da esquerda para direita ou de direita para esquerda.-->
+
+</body>
+</html>

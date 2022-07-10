@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: lightgray;
+      }
+      header{
+        background-image: linear-gradient(to top,#4ac5ae,#3ca185);
+        padding: 10px;
+        margin: 10px;
+               
+      } 
+      main{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+            
+      } 
+      footer{
+        background-color: black;
+        padding: 5px;
+        text-align: center; 
+        margin: 10px;
+        color: white;
+      }
+      article{
+        background-color: #F27405;
+        padding: 20px;
+        border-radius: 5px 5px;
+        
+      }
+      h1{
+        background-image: linear-gradient(to right, #04BF9D,#F27405);
+        padding: 20px;
+        color: black;
+        text-shadow: black;
+        text-align: center;
+        border-radius: 5px 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+      }
+      nav{
+        font-weight: bold;
+        padding: 3px;
+        background-color: #F27405;
+        text-align: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+        border-radius: 5px 5px;
+        /*Parametros de box-shadow:2px(deslocamento horizontal)2px(deslocamento vertical)5px(espalhamento) e por último a cor preta(black)*/
+        
+                
+      }
+      nav > a{
+        color: white;
+        text-decoration: none;
+        margin: 100px;
+                
+        
+      }    
+      nav >a:hover{
+        text-decoration: underline;
+        
+        
+      }
+      article >aside{
+        background-color: #ca6105;
+        margin-right: 900px;
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        
+      }
+      div#bola{
+        height: 200px;
+        width: 200px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+      }     
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu primeiro site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>        
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatem itaque laborum, similique cupiditate saepe quasi dicta ab? Fugit impedit magnam fugiat fuga ea dolorem dolore suscipit ad ullam sapiente.</p>
+                <aside>
+                    <p>Artigo escrito por Antonio José Joaquim</p>
+                </aside>
+            </article>
+            
+        </section>
+
+    </main>
+    <footer>
+        Desenvolvido por ARMY CODE
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>
