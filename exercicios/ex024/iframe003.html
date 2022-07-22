@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eveniet nisi blanditiis tempore laboriosam at, architecto eius, pariatur voluptatibus dolore aliquid eligendi asperiores maiores deserunt ullam veritatis? Voluptates, modi porro?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus veritatis nulla quaerat architecto esse debitis maiores labore dolor excepturi voluptatem, temporibus perspiciatis maxime quisquam recusandae ut delectus pariatur vero ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fuga, non aspernatur ea illum officiis quis molestias excepturi perspiciatis distinctio laboriosam amet sit alias, error quam dolorem facilis beatae itaque?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium placeat corrupti ipsam animi aspernatur dolores, vitae eum, iste enim, necessitatibus veritatis adipisci accusantium cupiditate sunt sequi praesentium earum dolore excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ac cusamus porro amet deserunt neque doloribus, alias reprehenderit perferendis sit sapiente? Accusamus iure sapiente nihil voluptatum accusantium facere commodi perspiciatis, minima possimus.</p> <img src='imagens/logo cspm.png'> "> <!-- Para carregar páginas dentro do iframe sempre devemos usar a função NAME que será adicionada no Target-->
+        <p>Infelizmente seu navegador não é compatível com isso</p>
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium placeat corrupti ipsam animi aspernatur dolores, vitae eum, iste enim, necessitatibus veritatis adipisci accusantium cupiditate sunt sequi praesentium earum dolore excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ac cusamus porro amet deserunt neque doloribus, alias reprehenderit perferendis sit sapiente? Accusamus iure sapiente nihil voluptatum accusantium facere commodi perspiciatis, minima possimus.</p>
+</body>
+</html>
