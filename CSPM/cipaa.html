@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<title>Página de Denúncias</title>
+</head>
+<body>
+	<h1>Página de Denúncias</h1>
+	<form>
+		<label for="name">Nome:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">E-mail:</label>
+		<input type="text" id="email" name="email" required>
+
+		<label for="subject">Assunto:</label>
+		<input type="text" id="subject" name="subject" required>
+
+		<label for="message">Mensagem:</label>
+		<textarea id="message" name="message" rows="6" required></textarea>
+
+		<button type="submit">Enviar Denúncia</button>
+	</form>
+	<script>
+		const form = document.querySelector('form');
+		form.addEventListener('submit', (event) => {
+			event.preventDefault();
+			const name = document.querySelector('#name').value;
+			const email = document.querySelector('#email').value;
+			const subject = document.querySelector('#subject').value;
+			const message = document.querySelector('#message').value;
+			// Aqui você pode enviar os dados para o servidor de sua escolha
+			console.log(`Nome: ${name}, E-mail: ${email}, Assunto: ${subject}, Mensagem: ${message}`);
+		});
+	</script>
+</body>
+</html>
