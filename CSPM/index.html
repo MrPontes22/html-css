@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denúncias de Assédio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="parallax">
+    <div class="parallax-content">
+        <h1>TODOS CONTRA O ASSÉDIO E A DISCRIMINAÇÃO</h1>        
+        <h2>Seja uma voz contra o assédio!</h2>
+        <button onclick="scrollToForm()">DENUNCIE</button>
+    </div>
+  </div>
+
+  <form id="form-denuncia" action="processar-denuncia.php" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Nome (opcional)">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Email (opcional)">
+
+    <label for="descricao">Descrição do Assédio:</label>
+    <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+    <label for="provas">Provas (opcional):</label>
+    <input type="file" id="provas" name="provas">
+
+    <input type="submit" value="Enviar Denúncia">
+  </form>
+</body>
+
+</html>
