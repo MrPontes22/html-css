@@ -82,7 +82,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: bold; /* Adicionado para deixar em negrito */
+    font-weight: bold;
   }
   
   input[type="submit"]:hover {
@@ -99,28 +99,14 @@ body {
     border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: width 0.6s linear;
-    overflow-x: hidden;
-    
-  }
-  .fineshed_parallax{
-    background-image: url(img/fineshedBackground.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }  
+    overflow-x: hidden;    
+  } 
   nav.active {
     /* width: 350px; */
     position: fixed;
     top: 0;
     width: 100%;
-  }
-  
+  }  
   nav ul {
     display: flex;
     list-style-type: none;
@@ -191,6 +177,7 @@ body {
   }
 
  footer p {
+  margin: 20px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
@@ -201,21 +188,61 @@ body {
  }
 
  /* stylesCss da cartilha */
- .cartilha{
-  
-    margin: 0;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;   
-  
- }
- section{
-  margin: 20px;
-
- }
- section p{
-  text-indent: 10px;
-  text-align: justify;
- }
  .cartilha nav{
-  height: 50px;
+  height: 80px;
+ } 
+ .cart_parallax{
+  background-image: url(img/cart_backgound.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .section1{
+  margin: 40px;
+  background-color: #19120a93;
+  padding:10px;
  }
+ .section1 h3 {
+  color: white;
+  text-align: center;
+ }
+ .section1 p{
+  text-indent: 15px;
+  text-align: justify;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  padding: 5px;
+ }
+ .assediomoral_paralax{
+  background-image: url(img/assediomoral.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
+ .moral_parallax-content{
+  text-align: center;
+  background-color: #19120a93;
+  padding: 10px;
+  width:1900px;
+  color: white;
+ }
+ .moral_parallax-content p{
+  text-indent: 15px;
+  text-align: justify;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  padding: 5px;
+ }
+ 
