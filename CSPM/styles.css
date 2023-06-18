@@ -101,6 +101,18 @@ body {
     transition: width 0.6s linear;
     overflow-x: hidden;
     
+  }
+  .fineshed_parallax{
+    background-image: url(img/fineshedBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }  
   nav.active {
     /* width: 350px; */
