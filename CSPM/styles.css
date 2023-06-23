@@ -29,8 +29,7 @@ body {
     padding: 10px;
     font-weight: bold;
     border-radius: 5px;
-    margin: 20px;
-        
+    margin: 20px;        
   }
   button:hover{
     background-color: #BF8136;
@@ -195,7 +194,7 @@ body {
   color: blue;
  }
 
- /* stylesCss da cartilha */
+ /* stylesCss cartilha */
  .cartilha nav{
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -273,6 +272,7 @@ body {
  .ins{
   color: #F2A172;
  }
+ 
  .image-container {
   display: inline-block;  
   
