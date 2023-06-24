@@ -15,6 +15,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 5px;
   }
+  /*Style do parágrafo 'Juntos podemos fazer a diferença' */
   span {
     font-size:xx-large;
     font-weight: bold;
@@ -22,7 +23,9 @@ body {
     /* padding: 5px; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 5px;    
-  } 
+  }
+
+  /*Style do bottom 'Denuncie'*/ 
   button{
     font-size: large;
     background-color: white;
@@ -35,6 +38,8 @@ body {
     background-color: #BF8136;
   }
   
+
+  /* Início do style do parallax da página principal */
   .parallax {
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
@@ -53,6 +58,7 @@ body {
     
   }
   
+  /*Início do style do formulário */  
   form {
     max-width: 600px;
     margin: 20px auto;
@@ -94,7 +100,8 @@ body {
   
   input[type="submit"]:hover {
     background-color: #8C8C8C;
-  }  
+  }
+  /* início do Style da barra de menu da página principal */  
   nav {
     margin: auto;
     background-color:#6D5943;
@@ -145,7 +152,7 @@ body {
     font-weight: bold;
     margin: 0 10px;
   }
-  
+   
   .icon {
     background-color: #6D5943;
     border: 0;
@@ -182,7 +189,7 @@ body {
   nav.active .icon .line2 {
     transform: rotate(765deg) translateY(-5.5px);
   }
-
+/*Início Style do footer */
  footer p {
   margin: 20px;
   text-align: center;
@@ -194,11 +201,14 @@ body {
   color: blue;
  }
 
- /* stylesCss cartilha */
+/* Início do stylesCss da cartilha */
+
+ /*Style da barra de menu */
  .cartilha nav{
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
  } 
+/*Início Style do parallax início da cartilha*/
  .cart_parallax{
   background-image: url(img/cart_backgound.jpg);
   background-repeat: no-repeat;
@@ -210,6 +220,8 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/*Style da section1 */
  .section1{
   min-width: 300px;
   max-width: 1000px;
@@ -219,7 +231,6 @@ body {
   padding:10px;
   border-radius: 0px 0px 5px 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
  }
  .section1 h3 {
   color: white;
@@ -233,8 +244,8 @@ body {
   font-weight: 900;
   padding: 4px;
  }
- /*Style do paralax */
- .assediomoral_paralax{
+ /*Início Style do parallax assédio moral */
+ .assediomoral_parallax{
   background-image: url(img/assediomoral.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -249,7 +260,7 @@ body {
   color: white;
   text-align: center;
 }
-/*Style da Section2 */
+/*Início Style da Section2 */
  .section2{
   min-width: 300px;
   max-width: 1000px;
@@ -268,13 +279,13 @@ body {
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
-  padding: 4px;
-  
+  padding: 4px;  
  }
  /*Style dos parágrafos */
  .ins{
   color: #F2A172;
  }
+ 
 /*Style das imagens */
  .image-container {
   display: inline-block;  
