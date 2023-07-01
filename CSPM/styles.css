@@ -4,8 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #6D5943;
-    
+    background-color: #6D5943;    
   }
   h1 {
     font-size:xx-large;
@@ -24,20 +23,19 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 5px;    
   }
-
-  /*Style do bottom 'Denuncie'*/ 
-  button{
-    font-size: large;
-    background-color: white;
-    padding: 10px;
+  /*Style do bottom 'DENUNCIE'*/
+  button {
+    margin: auto;
+    display: block;
+    margin-top: 10px;
     font-weight: bold;
-    border-radius: 5px;
-    margin: 20px;        
+    font-size: large;
   }
-  button:hover{
-    background-color: #BF8136;
-  }
+ button:hover{
+  background-color: #6d594377;  
   
+   }
+
 
   /* Início do style do parallax da página principal */
   .parallax {
@@ -50,12 +48,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
+  }  
   .parallax-content {
     text-align: center;
-    color: #fff;
-    
+    color: #fff;    
   }
   
   /*Início do style do formulário */  
@@ -65,8 +61,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);            
   }
   
   label {
@@ -78,6 +73,7 @@ body {
   
   input[type="text"],
   input[type="email"],
+  input[type="phoneNumber"],
   textarea {
     width: 96%;
     padding: 10px;
@@ -96,17 +92,18 @@ body {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-  }
-  
+    margin-top: 5px;
+  }  
   input[type="submit"]:hover {
     background-color: #8C8C8C;
-  }
+  } 
   /* início do Style da barra de menu da página principal */  
   nav {
     margin: auto;
     background-color:#6D5943;
     padding: 5px;
     width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,28 +218,47 @@ body {
   justify-content: center;
 }
 
-/*Style da section1 */
- .section1{
+/*Style das sections */
+ .section{
   min-width: 300px;
   max-width: 1000px;
   margin: auto;
   margin-bottom: 30px;
   background-color: #19120a93;
-  padding:10px;
+  padding:25px;
   border-radius: 0px 0px 5px 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
- }
- .section1 h3 {
-  color: white;
   text-align: center;
  }
- .section1 p{
+ .section h2 {
+  color: white;
+  text-align: center;
+  background-color:#FFCE2C;
+  color:black;
+  border-radius: 5px 5px 5px 5px;
+ }
+ .section p{
   text-indent: 15px;
   text-align: justify;
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
   padding: 4px;
+ }
+ #atencion{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  max-width: 950px;
+  background-color: #6D5943;
+  padding: 15px;
+  border-radius: 20px 0px 20px 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+ }
+ #atencion span{
+  color:#FFCE2C;
+  padding: 5px 20px 5px 20px;
+  
  }
  /*Início Style do parallax assédio moral */
  .assediomoral_parallax{
@@ -260,51 +276,40 @@ body {
   color: white;
   text-align: center;
 }
-/*Início Style da Section2 */
- .section2{
-  min-width: 300px;
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 30px;
-  background-color: #19120a93;
-  padding:10px;
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  text-align: center;
 
- }
- .section2 p{
-  text-indent: 15px;
-  text-align: justify;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
-  padding: 4px;  
- }
- /*Style dos parágrafos */
+ /*Style dos 'ins' dos  parágrafos */
  .ins{
   color: #F2A172;
  }
  
 /*Style das imagens */
  .image-container {
-  display: inline-block;  
-  
+  display: inline-block;   
+}
+.image-container ins {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
 }
 .image-container + .image-container {
-  margin-left: 20px;
+  margin-left: 5px;
+    
 }
+/* .image-container{
+  margin-right: 10px;
+} */
 
 img {
   max-width: 100%;
-  height: auto;
+  height: auto;  
 }
 
 .image-text {
-  margin-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-height: 250px;
 }
 .image-container p{
   text-align: justify;
-  width: 300px;
-  height: 300px;
+  width: 430px;
+  height: 430px;
 }

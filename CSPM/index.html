@@ -26,33 +26,37 @@
   <div class="parallax">
     <div class="parallax-content">
         <h1>TODOS CONTRA O ASSÉDIO E A DISCRIMINAÇÃO</h1>        
-        <h2>Seja uma voz contra o assédio!</h2>
-        <button onclick="scrollToForm()">DENUNCIE</button>
+         <span>Seja uma voz contra o assédio!</span>
+        <button onclick="scrollToForm()" >DENUNCIE</button>
     </div>
   </div>
-
-  <form id="form-denuncia" action="processar-denuncia.php" method="POST">
+  
+  <form id="form-denuncia" action="https://api.staticforms.xyz/submit" method="POST">
+    <input type="hidden" name="accessKey" value="509fa291-e2ba-4ab8-ab51-8f0bafc1a26b"> <!-- Required -->
+    <input type="hidden" name="redirectTo" value="http://localhost/cspm/fineshed.html">
     <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" placeholder="Nome (opcional)">
+    <input type="text" id="nome" name="$nome" placeholder="Nome (opcional)">
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Email (opcional)">
+    <input type="email" id="email" name="$email" placeholder="Email (opcional)">
+
+    <label for="phoneNumber">WhatsApp:</label>
+    <input type="phoneNumber" id="phoneNumber" name="@phoneNumber" placeholder="WhatsApp (opcional)">
 
     <label for="descricao">Descrição do Assédio:</label>
-    <textarea id="descricao" name="descricao" rows="5" required></textarea>
+    <textarea id="descricao" name="@descricao" rows="5" required></textarea>
 
-    <!-- <label for="provas">Provas (opcional):</label>
-    <input type="file" id="provas" name="provas"> -->
-
-    <input type="submit" value="Enviar Denúncia">
+    <label for="provas">Provas (opcional):</label>
+    <input type="file" id="provas" name="@provas">    
+    <input type="submit" value="Enviar Denúncia">    
   </form>
-  <!-- Dribbble link: https://dribbble.com/shots/2427219-Header-Navigation-Day-053-dailyui -->
+    <!-- Dribbble link: https://dribbble.com/shots/2427219-Header-Navigation-Day-053-dailyui -->
   
-  <!--Script da barra de menu index.html -->
+  <!--Script da barra de menu -->
     <script>
       const toggle = document.getElementById('toggle')
       const nav = document.getElementById('nav')
-      toggle.addEventListener('click', () => nav.classList.toggle('active'))
+      toggle.addEventListener('mousemove', () => nav.classList.toggle('active'))
     </script>
   <footer>
       <p>&copy; CSPM 2023. Todos os direitos reservados | Produzido por: <a href="#">Diego Pontes</a></p>
