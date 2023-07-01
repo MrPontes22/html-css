@@ -1,3 +1,16 @@
+:root{
+  --cor0:#ebe5c5;
+  --cor1:#FFCE2C;
+  --cor2:#3ddc84;
+  --cor3:#2fa866;
+  --cor4:#1a5c37;
+  --cor5:#063d1e;
+
+  --fonte-padrão:Arial,Verdana, Helvetica, sans-serif;
+  --fonte-destaque:'Bebas Neue', cursive;
+  --fonte-idroid:'idroid', sans-serif;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -233,7 +246,7 @@ body {
  .section h2 {
   color: white;
   text-align: center;
-  background-color:#FFCE2C;
+  background-image: linear-gradient(to right, var(--cor1), var(--cor0) );
   color:black;
   border-radius: 5px 5px 5px 5px;
  }
