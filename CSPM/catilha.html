@@ -10,6 +10,7 @@
 </head>
 
 <body class="cartilha">
+    <!-- barra de menu -->
     <nav class="active" id="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -29,7 +30,7 @@
         <span>Juntos podemos fazer a diferença! Denuncie.</span>       
     </div>
   </div> 
-    <section class="section">
+ <section class="section">
         <h2>INTRODUÇÃO</h2>
         <p class="indented-paragraph">  Em 21 de setembro de 2022 foi promulgada a LEI Nº 14.457, -Programa
             Emprega + Mulheres, esta nova legislação alterou o nome da CIPA para
@@ -77,13 +78,14 @@
             capacitismo ou LGBTfobia. Contudo, assédio e discriminação são
             conceitos distintos.
         </P>         
-    </section>
-    <div class="assediomoral_parallax">
+</section>
+    <!-- <div class="assediomoral_parallax">
         <div class="moral_parallax-content">
-            <h1>ASSÉDIO MORAL - DEFINIÇÕES</h1>                   
+                               
         </div>
-      </div>             
+      </div>              -->
 <section class="section">
+    <h2>ASSÉDIO MORAL - DEFINIÇÕES</h2>
     <p>
         <ins class="ins">Assédio moral:</ins> toda conduta abusiva, a exemplo de gestos, palavras
         e atitudes que se repitam de forma sistemática, atingindo a
@@ -231,28 +233,124 @@
                 pode também ser punida
                 administrativamente e penalmente,
                 enquadrada em outros tipos penais.</p>            
-          </div>
-        <section>
-            <h2>O que fazer se você for assediada(o)?</h2>
-            <hr />
-            <p>
-                O assédio sexual costuma ocorrer quando não há testemunhas em
-                volta, o que dificulta a obtenção de provas. Por medo, constrangimento
-                ou vergonha, a vítima costuma silenciar, contribuindo para a repetição
-                da conduta de assédio (Senado Federal, 2017, p. 20).
-                Assim, algumas medidas devem ser observadas, tanto preventivas como
-                ostensivas, de modo a coibir novos atos ou mesmo a fim de prover meios
-                para que os elementos da conduta possam ser levados ao conhecimento
-                da administração pública para providências, como:
-            </p>
-                    
-        </section>
-        
+          </div>       
 </section>
+<section class="section">
+    <h2>O que fazer se você for assediada(o)?</h2>
+    <hr />
+    <p>
+        O assédio sexual costuma ocorrer quando não há testemunhas em
+        volta, o que dificulta a obtenção de provas. Por medo, constrangimento
+        ou vergonha, a vítima costuma silenciar, contribuindo para a repetição
+        da conduta de assédio (Senado Federal, 2017, p. 20).
+        Assim, algumas medidas devem ser observadas, tanto preventivas como
+        ostensivas, de modo a coibir novos atos ou mesmo a fim de prover meios
+        para que os elementos da conduta possam ser levados ao conhecimento
+        da administração pública para providências, como:
+    </p>            
+    <div class="box">
+        <p>• Anote TUDO: as situações de
+        assédio, relatando detalhes, tais
+        como dia, local, nome da(s)
+        pessoa(s) envolvida(s) e de
+        testemunhas, motivos alegados e
+        conteúdo das conversas;
+        </p>
+    </div>
+    <div class="box">
+        <p>• Evite ficar a sós com a pessoa
+            assediadora. Procure sempre ter
+            a presença de outras pessoas;
+        </p>
+    </div>
+  
+    <div class="box">
+        <p>• Converse com pessoas que
+        possam ter presenciado a
+        situação de assédio e possam ser
+        possíveis testemunhas;
+        </p>
+    </div>
+    <div class="box">
+        <p>• É fundamental falar com
+        alguém de sua confiança,
+        não se isole. Busque uma
+        rede de apoio que ajude
+        você a lidar com o ocorrido;
+        </p>
+    </div>
+    <div class="box">
+        <p>• Reúna todas as provas
+            possíveis, tais como
+            gravações, fotos, e-mails,
+            bilhetes, presentes e
+            testemunhas;
+        </p>
+        </div>
+    <div class="box">
+        <p>• Denuncie na Ouvidoria do órgão
+        ou entidade, e faça um boletim de
+        ocorrência na Delegacia de
+        Atendimento Especial à Mulher
+        (DEAM) ou em qualquer delegacia
+        comum;
+        </p>
+    </div>                    
+</section>
+
+<section class="section">
+    <h2>DISCRIMINAÇÃO - DEFINIÇÕES</h2>
+    <hr />
+    <p>
+        É toda distinção, exclusão, restrição ou preferência baseada em sexo,
+        gênero, idade, orientação sexual, deficiência, crença religiosa, convicção
+        filosófica ou política, raça, cor, descendência ou origem nacional ou
+        étnica, que tenha por objeto anular ou restringir o reconhecimento, gozo
+        ou exercício, em igualdade de condições, de direitos humanos e
+        liberdades fundamentais nos campos político, econômico, social, cultural
+        ou em qualquer outro campo da vida pública ou privada. (art.1o, I, da Lei
+        12.288/2010).
+    </p>
+    <p>
+        Deve-se explicitar que há condutas discriminatórias que poderão
+        configurar crime de assédio sexual, crime de injúria racial ou crime de
+        preconceito, desde que cumpram os requisitos para tanto.
+    </p>
+</section> 
+<script>
+//  script da box
+const boxes = document.querySelectorAll('.box')
+
+    window.addEventListener('scroll', checkBoxes)
+    
+    checkBoxes()
+    
+    function checkBoxes() {
+        const triggerBottom = window.innerHeight / 5 * 4
+    
+        boxes.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top
+    
+            if(boxTop < triggerBottom) {
+                box.classList.add('show')
+            } else {
+                box.classList.remove('show')
+            }
+        })
+}</script>
+<!-- script da barra de menu -->
 <script>
     const toggle = document.getElementById('toggle')
     const nav = document.getElementById('nav')
-    toggle.addEventListener('mousemove', () => nav.classList.toggle('active'))
+  
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset <= 0) {
+        nav.classList.add('active');
+      } else {
+        nav.classList.remove('active');
+      }
+    });
+    toggle.addEventListener('click', () => nav.classList.toggle('active'))
   </script>  
 <footer>
     <p>&copy; CSPM 2023. Todos os direitos reservados | Produzido por: <a href="#">Diego Pontes</a></p>
