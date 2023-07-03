@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Layout com Duas Colunas</title>
+  <style>
+    .column {
+      width: 50%;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="column">
+      <h2>Bloco 1</h2>
+      <p>Texto do bloco 1...</p>
+    </div>
+    <div class="column">
+      <h2>Bloco 2</h2>
+      <p>Texto do bloco 2...</p>
+    </div>
+    <div class="column">
+      <h2>Bloco 3</h2>
+      <p>Texto do bloco 3...</p>
+    </div>
+    <div class="column">
+      <h2>Bloco 4</h2>
+      <p>Texto do bloco 4...</p>
+    </div>
+    <div class="column">
+      <h2>Bloco 5</h2>
+      <p>Texto do bloco 5...</p>
+    </div>
+    <div class="column">
+      <h2>Bloco 6</h2>
+      <p>Texto do bloco 6...</p>
+    </div>
+  </div>
+</body>
+</html>
