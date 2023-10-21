@@ -62,7 +62,7 @@ body {
 
   /* Início do style do parallax da página principal */
   .parallax {
-    background-image: url(img/background.jpg);
+    background-image: url(img/main_background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -266,7 +266,7 @@ body {
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
-  padding: 4px;
+  padding: 10px;  
  }
  #atencion{
   display: block;
@@ -347,7 +347,7 @@ img:hover {
 
 .image-text {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   max-height: 250px;
 }
 .image-container p{
@@ -394,8 +394,7 @@ img:hover {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items: center;   
   }
 
 .row {
@@ -411,13 +410,13 @@ img:hover {
 .column p {
   background-color: #6D5943;
   width:auto;
-  height:170px;
+  height:fit-content;
   text-align: justify;
   padding: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   border-radius: 15px 0px 15px 0px;
 }
 .column p:hover{
-  background-color: var(--cor2);
+  background-color:#FFCE2C;
   color: black;
 }
